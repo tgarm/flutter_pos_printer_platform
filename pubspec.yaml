@@ -16,7 +16,7 @@ dependencies:
   image_v3: ^3.3.0
   network_info_plus: ^4.0.2
   ping_discover_network_forked: ^0.0.1
-  rxdart: ^0.27.7
+  rxdart: ^0.28.0
 
 dev_dependencies:
   flutter_test:
