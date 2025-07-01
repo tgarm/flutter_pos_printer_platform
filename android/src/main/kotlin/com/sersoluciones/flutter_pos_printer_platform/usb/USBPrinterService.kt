@@ -75,7 +75,7 @@ class USBPrinterService private constructor(private var mHandler: Handler?) {
             setPackage(mContext?.packageName)
         }
         mPermissionIndent = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-            PendingIntent.getBroadcast(mContext, 0, GetEXTRA_PERMISSION_GRANTEDIntent, PendingIntent.FLAG_MUTABLE)
+            PendingIntent.getBroadcast(mContext, 0, GetEXTRA_PERMISSION_GRANTEDIntent, PendingIntent.FLAG_IMMUTABLE)
         } else {
             PendingIntent.getBroadcast(mContext, 0, GetEXTRA_PERMISSION_GRANTEDIntent, 0)
         }
